@@ -9,6 +9,7 @@ import Login from "../pages/Authentications/Login";
 import Signup from "../pages/Authentications/Signup";
 import ForgotPassword from "../pages/Authentications/ForgotPassword";
 import PasswordReset from "../pages/Authentications/PasswordReset";
+import ChatPage from "../pages/Chat/index";
 
 function Navigation(): React.JSX.Element {
   return (
@@ -21,6 +22,7 @@ function Navigation(): React.JSX.Element {
           <Route path="/signup" Component={Signup} />
           <Route path="/forgot-password" Component={ForgotPassword} />
           <Route path="/reset-password" Component={PasswordReset} />
+          <Route path="/chat" Component={ChatPage}/>
         </Routes>
         <Footer />
       </Router>

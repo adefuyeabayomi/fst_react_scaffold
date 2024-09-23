@@ -1,8 +1,13 @@
 import React from "react";
+import {Link } from 'react-router-dom'
 import "./style.css";
 
 const Home = () => {
-  return <div>Home component</div>;
+  return (
+  <div>
+    <Link to="/chat">Go To Chat</Link>
+  </div>
+  )
 };
 
 export default Home;
